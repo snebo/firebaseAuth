@@ -1,0 +1,19 @@
+{
+  "name": "firebaseauth",
+  "version": "1.0.0",
+  "description": "tyring out firebase authentication",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development"
+  },
+  "author": "stefano",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.14.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
