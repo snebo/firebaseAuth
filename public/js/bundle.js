@@ -15,7 +15,7 @@
   \******************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://firebaseauth/./functions/src/app.js?");
+eval("// after the document has loaded\n // store the form\n//  store the input of the form\n//  check on click of the submit button of the form\ndocument.addEventListener('DOMContentLoaded', () =>{\n\n    const form = document.querySelector('form')\n    const user_email = document.querySelector('input[type=\"email\"]')\n\n    form.addEventListener(\"submit\", (event)=>{\n        event.preventDefault()\n\n        const email = user_email.value.trim()\n\n        if( email == \"\") {\n            alert(\"Please enter an email address\")\n        }\n        else if (!check_mail(email)){\n            alert('Enter a valid email!')\n        }\n        else{\n            console.log(\"Email: \",email)\n            //....\n        }\n\n    })\n\n    function check_mail(email){\n        const re = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/; \n        return re.test(email)\n    }\n})\n\n\n//# sourceURL=webpack://firebaseauth/./functions/src/app.js?");
 
 /***/ })
 
